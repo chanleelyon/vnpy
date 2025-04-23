@@ -294,7 +294,7 @@ class MlpModel(AlphaModel):
         Returns
         -------
         tuple[int, float, dict] | None
-            Returns updated early stop count, best validation loss, and best model parameters
+            Returns updated early stop count, the best validation loss, and best model parameters
         """
         early_stop_count += 1
         train_loss /= self.eval_steps
